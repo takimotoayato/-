@@ -9,9 +9,9 @@
 #include "Base/Base.h"
 #include "Game/Player.h"
 #include "Game/Enemy.h"
+#include "Game/Boss.h"
 #include "Game/Bullet.h"
 #include "Game/Map.h"
-#include "Game/Boss.h"
 #include "Game/Title.h"
 #include "Game/Game.h"
 #include "Game/UI.h"
@@ -98,24 +98,10 @@ void Init(void)
 
 
 
-	//プレイヤーの生成
-	//Base::Add(new Player(CVector2D(100,580)));
-	Base::Add(new Player(CVector2D(930, 940)));
-	//敵の生成
-	Base::Add(new Enemy(CVector2D(500,500)));
-	Base::Add(new Enemy(CVector2D(32 * 17, 32 * 14)));
-	Base::Add(new Enemy(CVector2D(32 * 37, 32 * 10)));
 //
-	Base::Add(new Boss(CVector2D(600, 600)));
-	Base::Add(new Boss(CVector2D(900, 300)));
-	Base::Add(new Boss(CVector2D(1600, 500)));
 
-	//マップの生成
-	Base::Add(new Map());
-//
-	Base::Add(new UI());
-	
-	//Base::Add(new Title);
+	//
+	Base::Add(new Title);
 
 
 

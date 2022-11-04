@@ -1,8 +1,11 @@
 #include "Game.h"
 //#include "Field.h"
-//#include "Player.h"
+#include "Player.h"
+#include "Enemy.h"
+#include "Boss.h"
 #include "Title.h"
 #include "Map.h"
+#include "UI.h"
 Game::Game() :Base(eType_Scene)
 {
 	//Base::Add(new Field());
@@ -13,42 +16,38 @@ Game::Game() :Base(eType_Scene)
 	//Base::Add(new trap(CVector2D(222 + 256 * 3, 440), true));
 	//Base::Add(new trap(CVector2D(300 + 256 * 3, 440), true));
 	//Base::Add(new Goal(CVector2D(300, 4000)));
-	
+
+	//プレイヤーの生成
+	//Base::Add(new Player(CVector2D(100,580)));
+	Base::Add(new Player(CVector2D(930, 940)));
+	//敵の生成
+	Base::Add(new Enemy(CVector2D(500, 500)));
+	Base::Add(new Enemy(CVector2D(32 * 17, 32 * 14)));
+	Base::Add(new Enemy(CVector2D(32 * 37, 32 * 10)));
+	//
+	Base::Add(new Boss(CVector2D(600, 600)));
+	Base::Add(new Boss(CVector2D(900, 300)));
+	Base::Add(new Boss(CVector2D(1600, 500)));
+
+	//マップの生成
+	Base::Add(new Map());
+
+	Base::Add(new UI());
 
 }
 Game::~Game()
 {
-	//全てのオブジェクトを破棄
-	//Base::KillAll();
-	//タイトルシーンへ
-	//Base::Add(new Title());
-
-	int game_state = 0;
-	switch (game_state) {
-	case 0:
-		//ポーズ中の更新処理
-		if (PUSH(CInput::eButton1))
-			game_state = 1;
-		break;
-	case 1:
-		//ゲーム中の更新処理
-		break;
+	
 
 		//全てのオブジェクトを破棄
 		Base::KillAll();
 		//タイトルシーンへ
 		Base::Add(new Title());
-	}
+	
 }
 
 void Game::Update()
 {
-	if (!Base::FindObject(eType_Goal)) {
-		Base::Add(new Title());
-		if (PUSH(CInput::eButton1))
-		SetKill();
-	}
-
 	
 	//プレイヤー死亡　ボタン１でゲームシーン終了
 	
@@ -57,29 +56,18 @@ if (!Base::FindObject(eType_Player))
 	{
 		//全てのオブジェクトを破棄
 		Base::KillAll();
-		//ゲームオーバーシーンへ
-		Base::Add(new Gameover());
 		//ボタン１でタイトル破棄
-		if (PUSH(CInput::eButton1)) {
+		if (PUSH(CInput::eButton5)) {
 			m_kill = true;
 			
 
 
 		}
 */
-
-
-
-	
-	
-
-	if (!Base::FindObject(eType_Goal)) {
-		//全てのオブジェクトを破棄
-		Base::KillAll();
-		//タイトルシーンへ
-		Base::Add(new Title());
-		
+//プレイヤー死亡　ボタン5でゲームシーン終了
+	if (!Base::FindObject(eType_Player) && PUSH(CInput::eButton5)) {
+		SetKill();
 	}
-	
+
 }
 

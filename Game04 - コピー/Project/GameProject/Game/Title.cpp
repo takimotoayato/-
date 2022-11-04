@@ -10,16 +10,16 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 
 Title::~Title()
 {
-	//全てのオブジェクトを破棄
-	//Base::KillAll();
+	////全てのオブジェクトを破棄
+	Base::KillAll();
 	
 
 
 
 
 	//タイトル破棄時にゲームシーンへ移行
-	//Base::Add(new Game());
-	Base::Add(new Title());
+	Base::Add(new Game());
+	//Base::Add(new Title());
 
 
 }
@@ -27,7 +27,7 @@ Title::~Title()
 void Title::Update()
 {
 	//ボタン１でタイトル破棄
-	if (PUSH(CInput::eButton1)) {
+	if (PUSH(CInput::eButton5)) {
 		m_kill = true;
 	}
 
