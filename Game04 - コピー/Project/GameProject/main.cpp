@@ -107,6 +107,9 @@ void Init(void)
 	Base::Add(new Enemy(CVector2D(32 * 37, 32 * 10)));
 //
 	Base::Add(new Boss(CVector2D(600, 600)));
+	Base::Add(new Boss(CVector2D(900, 300)));
+	Base::Add(new Boss(CVector2D(1600, 500)));
+
 	//É}ÉbÉvÇÃê∂ê¨
 	Base::Add(new Map());
 //

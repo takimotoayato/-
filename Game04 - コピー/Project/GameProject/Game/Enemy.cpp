@@ -25,7 +25,7 @@ void Enemy::Update()
 		m_ang = atan2(vec.x, vec.y);
 		if (m_cnt >= 120)
 		{
-			Base::Add(new Bullet(eType_Enemy_Bullet, m_pos, m_ang, 2));
+			Base::Add(new Bullet(eType_Enemy_Bullet, m_pos, m_ang, 1));
 			m_cnt = 0;
 		}
 	}
