@@ -29,7 +29,7 @@ Map::Map() : Base(eType_Field)
 {
 
 	//‰æ‘œ•¡»
-	m_img = COPY_RESOURCE("MapTipB", CImage);
+	m_img = COPY_RESOURCE("MapTipB2", CImage);
 	
 }
 
