@@ -6,17 +6,12 @@
 #include "Title.h"
 #include "Map.h"
 #include "UI.h"
+#include "Wall.h"
 Game::Game() :Base(eType_Scene)
 {
-	//Base::Add(new Field());
-	//Base::Add(new Player(CVector2D(0, 540), false));
-	//Base::Add(new Enemy(CVector2D(1280 + 256 * 1, 540), true));
-	//Base::Add(new Enemy(CVector2D(1280 + 256 * 2, 540), true));
-	//Base::Add(new Enemy(CVector2D(280 + 256 * 3, 440), true));
-	//Base::Add(new trap(CVector2D(222 + 256 * 3, 440), true));
-	//Base::Add(new trap(CVector2D(300 + 256 * 3, 440), true));
-	//Base::Add(new Goal(CVector2D(300, 4000)));
-
+	
+	//îwåiê∂ê¨
+	Base::Add(new Wall());
 	//ÉvÉåÉCÉÑÅ[ÇÃê∂ê¨
 	//Base::Add(new Player(CVector2D(100,580)));
 	Base::Add(new Player(CVector2D(930, 940)));
