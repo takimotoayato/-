@@ -91,6 +91,7 @@ void Init(void)
 		ADD_RESOURCE("Bullet2", CImage::CreateImage("Image/Bullet2.png"));
 		ADD_RESOURCE("Bullet3", CImage::CreateImage("Image/Bullet3.png"));
 		ADD_RESOURCE("Bullet4", CImage::CreateImage("Image/Bullet4.png"));
+		ADD_RESOURCE("ƒ{ƒ€", CImage::CreateImage("Image/ƒ{ƒ€.png"));
 		ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 		ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
 		ADD_RESOURCE("haikei1", CImage::CreateImage("Image/haikei1.png"));

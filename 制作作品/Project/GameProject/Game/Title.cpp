@@ -39,6 +39,6 @@ void Title::Draw()
 	//文字表示
 	
 	m_title_text.Draw(64, 820, 0, 0, 0, "スペースキーで攻撃");
-
+	m_title_text.Draw(64, 920, 0, 0, 0, "Zボタンでトラップ設置");
 
 }
