@@ -29,6 +29,7 @@ void Enemy::Update()
 
 	//カウントアップ
 	m_cnt++;
+
 	//プレイヤーを取得
 	Base* b = Base::FindObject(eType_Player);
 	//プレイヤーが居れば
@@ -37,7 +38,7 @@ void Enemy::Update()
 		//ターゲットへのベクトル
 		CVector2D vec = b->m_pos - m_pos;
 		m_ang = atan2(vec.x, vec.y);
-		if (m_cnt >= 120)
+		if (m_cnt >= 60)
 		{
 			Base::Add(new Bullet(eType_Enemy_Bullet, m_pos, m_ang, 1));
 			m_cnt = 0;

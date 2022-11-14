@@ -92,6 +92,9 @@ void Init(void)
 		ADD_RESOURCE("Bullet3", CImage::CreateImage("Image/Bullet3.png"));
 		ADD_RESOURCE("Bullet4", CImage::CreateImage("Image/Bullet4.png"));
 		ADD_RESOURCE("ボム", CImage::CreateImage("Image/ボム.png"));
+		ADD_RESOURCE("青ボム", CImage::CreateImage("Image/青ボム.png"));
+		ADD_RESOURCE("赤ボム", CImage::CreateImage("Image/赤ボム.png"));
+		ADD_RESOURCE("紫ボム", CImage::CreateImage("Image/紫ボム.png"));
 		ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 		ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
 		ADD_RESOURCE("haikei1", CImage::CreateImage("Image/haikei1.png"));
