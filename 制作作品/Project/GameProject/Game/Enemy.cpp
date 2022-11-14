@@ -13,6 +13,20 @@ Enemy::Enemy(const CVector2D& pos)
 }
 void Enemy::Update()
 {
+
+	//敵を下に動かす
+	const int move_speed = 12;
+	//カウントアップ
+	m_cnt++;
+	//60カウント(1秒)以上なら
+	if (m_cnt >= 60)
+	{
+		//移動
+		m_pos.y += move_speed;
+		//カウンターリセット
+		m_cnt = 0;
+	}
+
 	//カウントアップ
 	m_cnt++;
 	//プレイヤーを取得

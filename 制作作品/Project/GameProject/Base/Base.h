@@ -8,12 +8,16 @@ enum {
 	eType_Boss,
 	eType_Player_Bullet,
 	eType_Enemy_Bullet,
+	eType_trap,
+	eType_Player_trap,
+	eType_Enemy_trap,
+
 	eType_Goal,
 	eType_Effect,
 	eType_UI,
 	eType_a,
 	eType_Scene,
-	eType_trap,
+	
 	eType_trapbullet,
 	eType_Map,
 	eType_M,

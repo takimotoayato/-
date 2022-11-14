@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "Bullet.h"
+#include "trap.h"
 #include "Map.h"
 Player::Player(const CVector2D& pos)
 	:Base(eType_Player)
@@ -42,6 +43,11 @@ void Player::Update()
 		Base::Add(new Bullet(eType_Player_Bullet, m_pos, m_ang, 6));
 	}
 	
+	if (PUSH(CInput::eButton1))
+	{
+		Base::Add(new trap(eType_Player_trap, m_pos, m_ang, 0));
+	}
+
 
 }
 void Player::Collision(Base* b)

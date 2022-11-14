@@ -18,6 +18,7 @@
 #include "Game/Wall.h"
 #include "Game/GameData.h"
 #include "Game/UI.h"
+#include "Game/trap.h"
 //--------------------------------------------
 //ƒOƒ[ƒoƒ‹•Ï”—Ìˆæ
 //--------------------------------------------
