@@ -8,7 +8,7 @@ Bullet::Bullet(int type, const CVector2D& pos, float ang, float speed) : Base(ty
 		m_img = COPY_RESOURCE("Bullet3", CImage);
 
 	m_pos = pos;
-	m_img.SetCenter(16, 16);
+	m_img.SetCenter(15, 15);
 	m_ang = ang;
 	m_speed = speed;
 }
@@ -21,6 +21,7 @@ void Bullet::Update()
 }
 void Bullet::Draw() 
 {
+	m_img.SetSize(30, 30);
 	m_img.SetPos(m_pos);
 	m_img.SetAng(m_ang);
 	m_img.Draw();
