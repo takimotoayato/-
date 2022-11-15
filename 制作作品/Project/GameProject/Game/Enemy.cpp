@@ -9,7 +9,7 @@ Enemy::Enemy(const CVector2D& pos)
 	//中心を設定
 	m_img.SetCenter(16, 16);
 	//半径
-	m_rad = 32;
+	m_rad = 16;
 	//矩形を設定
 	m_rect = CRect(-16, -16, 16, 16);
 
@@ -29,7 +29,6 @@ void Enemy::Update()
 
 	//カウントアップ
 	m_cnt++;
-
 	//プレイヤーを取得
 	Base* b = Base::FindObject(eType_Player);
 	//プレイヤーが居れば
@@ -38,14 +37,13 @@ void Enemy::Update()
 		//ターゲットへのベクトル
 		CVector2D vec = b->m_pos - m_pos;
 		m_ang = atan2(vec.x, vec.y);
-		if (m_cnt >= 100)
+		if (m_cnt >= 120)
 		{
-
 		//移動
-		m_pos.x += move_speed;
+		//m_pos.x += move_speed;
 		m_pos.y += move_speed;
-		
-
+		//m_pos.x -= move_speed;
+		//m_pos.y -= move_speed;
 		//カウンターリセット
 		m_cnt = 0;
 
@@ -57,7 +55,8 @@ void Enemy::Update()
 }
 void Enemy::Collision(Base* b)
 {
-	switch (b->m_type) {
+	switch (b->m_type) 
+	{
 	
 	case eType_Player:
 		if (m_type == eType_Enemy_Bullet && Base::CollisionCircle(this, b))
@@ -68,10 +67,10 @@ void Enemy::Collision(Base* b)
 		break;
 	/*case eType_Field:
 		if (Map* m = dynamic_cast<Map*>(b)) {
-			int t = m->CollisionMap(CVector2D(m_pos.x, m_pos_old.y));
+			int t = m->CollisionMap(CVector2D(m_pos.x, m_pos_old.y), m_rect);
 			if (t != 0)
 				m_pos.x = m_pos_old.x;
-			t = m->CollisionMap(CVector2D(m_pos_old.x, m_pos.y));
+			t = m->CollisionMap(CVector2D(m_pos_old.x, m_pos.y), m_rect);
 			if (t != 0)
 				m_pos.y = m_pos_old.y;
 
