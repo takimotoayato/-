@@ -5,15 +5,18 @@
 Player::Player(const CVector2D& pos)
 	:Base(eType_Player)
 {
-	m_img = COPY_RESOURCE("Player2", CImage);
+	m_img = COPY_RESOURCE("í“¬‹@", CImage);
 	m_pos = pos;
 	//’†S‚ğİ’è
-	m_img.SetCenter(16, 16);
+	//m_img.SetCenter(16, 16);
+	 m_img.SetCenter(25, 25);
 	//‹éŒ`‚ğİ’è
 	//m_rect = CRect(-16, -16, 16, 16);
-	m_rect = CRect(-32, -32, 32, 32);
+	//m_rect = CRect(-32, -32, 32, 32);
+	m_rect = CRect(-25, -25, 25, 25);
 	//”¼Œa
-	m_rad = 16;
+	//m_rad = 16;
+	 m_rad = 25;
 	m_ang;
 }
 void Player::Update()
@@ -82,7 +85,8 @@ void Player::Collision(Base* b)
 void Player::Draw() 
 {
 	m_img.SetPos(m_pos);
-	m_img.SetSize(32,32);
+	//m_img.SetSize(32,32);
+	m_img.SetSize(50, 50);
 	m_img.SetAng(m_ang);
 	m_img.Draw();
 }
