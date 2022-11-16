@@ -3,7 +3,7 @@
 trap::trap(int type, const CVector2D& pos, float ang, float speed) : Base(type)
 {
 	if (type == eType_Player_trap)
-		m_img = COPY_RESOURCE("ƒ{ƒ€", CImage);
+		m_img = COPY_RESOURCE("…Fƒ{ƒ€", CImage);
 	else
 		m_img = COPY_RESOURCE("Bullet3", CImage);
 
