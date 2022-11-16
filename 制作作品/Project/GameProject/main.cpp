@@ -85,6 +85,8 @@ void Init(void)
 		ADD_RESOURCE("Player", CImage::CreateImage("Image/Player.png"));
 		ADD_RESOURCE("Player2", CImage::CreateImage("Image/Player2.png"));
 		ADD_RESOURCE("戦闘機", CImage::CreateImage("Image/戦闘機.png"));
+		ADD_RESOURCE("戦闘機2", CImage::CreateImage("Image/戦闘機2.png"));
+		ADD_RESOURCE("戦闘機3", CImage::CreateImage("Image/戦闘機3.png"));
 		ADD_RESOURCE("Enemy", CImage::CreateImage("Image/Enemy.png"));
 		ADD_RESOURCE("Enemy2", CImage::CreateImage("Image/Enemy2.png"));
 		ADD_RESOURCE("Enemy3", CImage::CreateImage("Image/Enemy3.png"));
