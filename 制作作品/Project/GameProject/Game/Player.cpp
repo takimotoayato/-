@@ -43,7 +43,6 @@ void Player::Update()
 	//スペースキーで弾を発射
 	if (PUSH(CInput::eButton5))
 	{
-		//m_pos.y += speed;
 		Base::Add(new Bullet(eType_Player_Bullet, m_pos, m_ang, 6));
 	}
 	
