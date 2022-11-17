@@ -13,8 +13,8 @@ Gameclear::~Gameclear() {
 }
 
 void Gameclear::Update() {
-	//ボタン１でクリア画面を破棄
-	if (PUSH(CInput::eButton1)) {
+	//ボタン5でクリア画面を破棄
+	if (PUSH(CInput::eButton5)) {
 		//全てのオブジェクトを破棄
 		Base::KillAll();
 		//タイトルシーン
@@ -25,6 +25,6 @@ void Gameclear::Update() {
 void Gameclear::Draw()
 {
 	m_img.Draw();
-	
+	m_img.SetSize(1920, 1080);
 
 }
