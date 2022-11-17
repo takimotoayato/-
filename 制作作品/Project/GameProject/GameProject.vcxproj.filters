@@ -38,6 +38,9 @@
     <ClCompile Include="Game\trap.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="Game\Gemeclear.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
@@ -82,6 +85,9 @@
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="Game\trap.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Gameclear.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>

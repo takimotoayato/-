@@ -19,7 +19,8 @@ enum {
 	eType_trapbullet,
 	eType_Map,
 	eType_M,
-	eType_END
+	eType_END,
+	eType_Gameclear
 };
 
 //d—Í‰Á‘¬“x

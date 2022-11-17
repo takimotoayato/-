@@ -19,6 +19,7 @@
 #include "Game/GameData.h"
 #include "Game/UI.h"
 #include "Game/trap.h"
+#include "Game/Gameclear.h"
 //--------------------------------------------
 //ƒOƒ[ƒoƒ‹•Ï”—Ìˆæ
 //--------------------------------------------
