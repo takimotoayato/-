@@ -6,9 +6,9 @@ Boss::Boss(const CVector2D& pos)
 	m_img = COPY_RESOURCE("Enemy3", CImage);
 	m_pos = pos;
 	//’†S‚ğİ’è
-	m_img.SetCenter(100, 100);
+	m_img.SetCenter(50, 50);
 	//”¼Œa
-	m_rad = 100;
+	m_rad = 50;
 
 }
 void Boss::Update()

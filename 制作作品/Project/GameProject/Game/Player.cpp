@@ -43,7 +43,7 @@ void Player::Update()
 	//スペースキーで弾を発射
 	if (PUSH(CInput::eButton5))
 	{
-		Base::Add(new Bullet(eType_Player_Bullet, m_pos, m_ang, 6));
+		Base::Add(new Bullet(eType_Player_Bullet, m_pos, DtoR(180), 6));
 	}
 	
 	if (PUSH(CInput::eButton1))
