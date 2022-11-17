@@ -20,6 +20,7 @@
 #include "Game/UI.h"
 #include "Game/trap.h"
 #include "Game/Gameclear.h"
+#include "Game/Gameover.h"
 //--------------------------------------------
 //グローバル変数領域
 //--------------------------------------------
@@ -106,8 +107,8 @@ void Init(void)
 		ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
 		ADD_RESOURCE("haikei1", CImage::CreateImage("Image/haikei1.png"));
 		ADD_RESOURCE("MapTipB2", CImage::CreateImage("Image/MapTipB2.png"));
-		ADD_RESOURCE("ゲームクリア", CImage::CreateImage("Image/ゲームクリア.png"));
-
+		ADD_RESOURCE("ゲームクリア2", CImage::CreateImage("Image/ゲームクリア2.png"));
+		ADD_RESOURCE("gameover", CImage::CreateImage("Image/gameover.png"));
 
 
 //

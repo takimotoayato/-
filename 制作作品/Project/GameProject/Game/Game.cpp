@@ -9,6 +9,7 @@
 #include "Wall.h"
 #include"GameData.h"
 #include "Gameclear.h"
+#include "Gameover.h"
 Game::Game() :Base(eType_Scene)
 {
 	
@@ -76,13 +77,22 @@ if (!Base::FindObject(eType_Player))
 		Base::KillAll();
 		//ゲームシーン
 		Base::Add(new Gameclear());
-		//GameData::s_count = 60;
-		//GameData::kosuu = 5;
+		
 	}
+	if (!Base::FindObject(eType_Player)) {
+		//全てのオブジェクトを破棄
+		Base::KillAll();
+		//ゲームシーン
+		Base::Add(new Gameover());
+
+	}
+
+
 //プレイヤー死亡　ボタン5でゲームシーン終了
-	if (!Base::FindObject(eType_Player) && PUSH(CInput::eButton5)) {
+	/*if (!Base::FindObject(eType_Player) && PUSH(CInput::eButton5))
+	{
 		SetKill();
-	}
+	}*/
 
 }
 

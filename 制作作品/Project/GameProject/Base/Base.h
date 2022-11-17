@@ -20,6 +20,7 @@ enum {
 	eType_Map,
 	eType_M,
 	eType_END,
+	eType_Gameover,
 	eType_Gameclear
 };
 

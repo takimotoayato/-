@@ -4,7 +4,7 @@
 
 Gameclear::Gameclear() :Base(eType_Gameclear), m_Gameclear_text("C:\\Windows\\Fonts\\msgothic.ttc", 64) 
 {
-	m_img = COPY_RESOURCE("ゲームクリア", CImage);
+	m_img = COPY_RESOURCE("ゲームクリア2", CImage);
 	
 }
 
@@ -26,5 +26,5 @@ void Gameclear::Draw()
 {
 	m_img.Draw();
 	m_img.SetSize(1920, 1080);
-
+	m_Gameclear_text.Draw(64, 950, 0, 0, 0, "スペースキーでタイトルに戻る");
 }
