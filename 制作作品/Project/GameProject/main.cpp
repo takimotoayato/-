@@ -19,6 +19,7 @@
 #include "Game/GameData.h"
 #include "Game/UI.h"
 #include "Game/trap.h"
+#include "Game/kabe.h"
 #include "Game/Gameclear.h"
 #include "Game/Gameover.h"
 //--------------------------------------------
@@ -109,6 +110,7 @@ void Init(void)
 		ADD_RESOURCE("MapTipB2", CImage::CreateImage("Image/MapTipB2.png"));
 		ADD_RESOURCE("ゲームクリア2", CImage::CreateImage("Image/ゲームクリア2.png"));
 		ADD_RESOURCE("gameover", CImage::CreateImage("Image/gameover.png"));
+		ADD_RESOURCE("シールド", CImage::CreateImage("Image/シールド.png"));
 
 
 //

@@ -19,6 +19,7 @@
     <ClCompile Include="Game\GameData.cpp" />
     <ClCompile Include="Game\Gameover.cpp" />
     <ClCompile Include="Game\Gemeclear.cpp" />
+    <ClCompile Include="Game\kabe.cpp" />
     <ClCompile Include="Game\Map.cpp" />
     <ClCompile Include="Game\Player.cpp" />
     <ClCompile Include="Game\Title.cpp" />
@@ -36,6 +37,7 @@
     <ClInclude Include="Game\Gameclear.h" />
     <ClInclude Include="Game\GameData.h" />
     <ClInclude Include="Game\Gameover.h" />
+    <ClInclude Include="Game\kabe.h" />
     <ClInclude Include="Game\Map.h" />
     <ClInclude Include="Game\Player.h" />
     <ClInclude Include="Game\Title.h" />

@@ -1,4 +1,5 @@
 #include "Bullet.h"
+#include "kabe.h"
 #include "Map.h"
 Bullet::Bullet(int type, const CVector2D& pos, float ang, float speed) : Base(type)
 {
@@ -60,7 +61,13 @@ void Bullet::Collision(Base* b)
 			b->SetKill();
 		}
 		break;
-
+	case eType_kabe:
+		if (m_type == eType_Player_Bullet && Base::CollisionCircle(this, b))
+		{
+			SetKill();
+			b->SetKill();
+		}
+		break;
 
 
 
