@@ -37,7 +37,7 @@ void Title::Draw()
 	m_img.SetSize(1920, 1080);
 
 	//文字表示
-	
+	m_title_text.Draw(64, 720, 0, 0, 0, "     操作方法");
 	m_title_text.Draw(64, 820, 0, 0, 0, "スペースキーで攻撃");
 	m_title_text.Draw(64, 920, 0, 0, 0, "Zボタンでトラップ設置");
 
