@@ -37,7 +37,7 @@ void Enemy::Update()
 		//ターゲットへのベクトル
 		CVector2D vec = b->m_pos - m_pos;
 		m_ang = atan2(vec.x, vec.y);
-		if (m_cnt >= 120)
+		if (m_cnt >= 100)
 		{
 		//移動
 		//m_pos.x += move_speed;
