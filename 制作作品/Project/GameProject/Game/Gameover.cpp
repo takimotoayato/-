@@ -4,7 +4,7 @@
 
 Gameover::Gameover() :Base(eType_Gameclear), m_Gameover_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 {
-	m_img = COPY_RESOURCE("gameover", CImage);
+	m_img = COPY_RESOURCE("ゲームオーバー", CImage);
 
 }
 

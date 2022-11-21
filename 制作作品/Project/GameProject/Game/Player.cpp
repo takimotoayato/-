@@ -51,11 +51,12 @@ void Player::Update()
 	{
 		Base::Add(new trap(eType_Player_trap, m_pos, m_ang, 0));
 	}
-
+	/*
 	if (PUSH(CInput::eButton2))
 	{
 		Base::Add(new kabe(eType_Player_kabe, m_pos, m_ang, 0));
 	}
+	*/
 }
 void Player::Collision(Base* b)
 {
