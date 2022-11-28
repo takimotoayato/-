@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include "../Base/Base.h"
 
 class Game2 : public Base {

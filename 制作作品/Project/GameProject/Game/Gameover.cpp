@@ -1,5 +1,6 @@
 #include "Gameover.h"
 #include "Game.h"
+#include "Game2.h"
 #include "Title.h"
 
 Gameover::Gameover() :Base(eType_Gameclear), m_Gameover_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)

@@ -1,5 +1,6 @@
 #include "Gameclear.h"
 #include "Game.h"
+#include "Game2.h"
 #include "Title.h"
 
 Gameclear::Gameclear() :Base(eType_Gameclear), m_Gameclear_text("C:\\Windows\\Fonts\\msgothic.ttc", 64) 
