@@ -14,6 +14,7 @@
 #include "Game/Map.h"
 #include "Game/Title.h"
 #include "Game/Game.h"
+#include "Game/Game2.h"
 #include "Game/UI.h"
 #include "Game/Wall.h"
 #include "Game/GameData.h"
