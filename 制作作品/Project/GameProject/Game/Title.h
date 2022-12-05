@@ -1,7 +1,8 @@
 #pragma once
 #include "../Base/Base.h"
 
-class Title : public Base {
+class Title : public Base
+{
 	//画像オブジェクト
 	CImage m_img;
 	

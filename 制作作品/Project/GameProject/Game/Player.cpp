@@ -20,6 +20,7 @@ Player::Player(const CVector2D& pos)
 	 m_rad = 25;
 	m_ang;
 }
+
 void Player::Update()
 {
 	m_pos_old = m_pos;
@@ -58,6 +59,7 @@ void Player::Update()
 	}
 	*/
 }
+
 void Player::Collision(Base* b)
 {
 	switch (b->m_type) 
@@ -86,6 +88,7 @@ void Player::Collision(Base* b)
 
 
 }
+
 void Player::Draw() 
 {
 	m_img.SetPos(m_pos);

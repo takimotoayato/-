@@ -44,6 +44,7 @@ Game3::Game3() :Base(eType_Scene)
 	//Base::Add(new UI());
 
 }
+
 Game3::~Game3()
 {
 
@@ -58,7 +59,8 @@ Game3::~Game3()
 void Game3::Update()
 {
 	/*
-	if (!Base::FindObject(eType_Enemy)) {
+	if (!Base::FindObject(eType_Enemy))
+	{
 		//全てのオブジェクトを破棄
 		Base::KillAll();
 		//ゲームシーン
@@ -66,14 +68,16 @@ void Game3::Update()
 
 	}
 	*/
-	if (!Base::FindObject(eType_Enemy)) {
+	if (!Base::FindObject(eType_Enemy))
+	{
 		//全てのオブジェクトを破棄
 		Base::KillAll();
 		//ゲームシーン
 		Base::Add(new Gameclear());
 
 	}
-	if (!Base::FindObject(eType_Player)) {
+	if (!Base::FindObject(eType_Player)) 
+	{
 		//全てのオブジェクトを破棄
 		Base::KillAll();
 		//ゲームシーン

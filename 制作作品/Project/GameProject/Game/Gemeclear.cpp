@@ -9,13 +9,16 @@ Gameclear::Gameclear() :Base(eType_Gameclear), m_Gameclear_text("C:\\Windows\\Fo
 	
 }
 
-Gameclear::~Gameclear() {
+Gameclear::~Gameclear() 
+{
 
 }
 
-void Gameclear::Update() {
+void Gameclear::Update() 
+{
 	//ボタン5でクリア画面を破棄
-	if (PUSH(CInput::eButton5)) {
+	if (PUSH(CInput::eButton5))
+	{
 		//全てのオブジェクトを破棄
 		Base::KillAll();
 		//タイトルシーン

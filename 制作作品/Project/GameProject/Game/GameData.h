@@ -1,5 +1,6 @@
 #pragma once
-class GameData {
+class GameData 
+{
 public:
 	static int s_score;
 };

@@ -22,6 +22,7 @@ void Bullet::Update()
 	m_pos += m_vec;
 
 }
+
 void Bullet::Draw() 
 {
 	m_img.SetSize(30, 30);

@@ -20,6 +20,7 @@ void kabe::Update()
 	m_pos += m_vec;
 
 }
+
 void kabe::Draw()
 {
 	m_img.SetPos(m_pos);

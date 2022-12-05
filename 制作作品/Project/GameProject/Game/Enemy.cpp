@@ -14,6 +14,7 @@ Enemy::Enemy(const CVector2D& pos)
 	m_rect = CRect(-16, -16, 16, 16);
 
 }
+
 void Enemy::Update()
 {
 
@@ -53,6 +54,7 @@ void Enemy::Update()
 	}
 
 }
+
 void Enemy::Collision(Base* b)
 {
 	switch (b->m_type) 
@@ -66,7 +68,8 @@ void Enemy::Collision(Base* b)
 		}
 		break;
 	/*case eType_Field:
-		if (Map* m = dynamic_cast<Map*>(b)) {
+		if (Map* m = dynamic_cast<Map*>(b))
+		{
 			int t = m->CollisionMap(CVector2D(m_pos.x, m_pos_old.y), m_rect);
 			if (t != 0)
 				m_pos.x = m_pos_old.x;

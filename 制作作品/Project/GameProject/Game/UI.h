@@ -1,7 +1,8 @@
 #pragma once
 #include "../Base/Base.h"
 
-class UI : public Base {
+class UI : public Base 
+{
 public:
 	CImage m_img;
 public:

@@ -1,7 +1,8 @@
 #pragma once
 #include "../Base/Base.h"
 
-class Gameover :public Base {
+class Gameover :public Base 
+{
 	//画像オブジェクト
 	CImage m_img;
 	//文字表示オブジェクト

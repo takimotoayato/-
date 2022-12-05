@@ -11,6 +11,7 @@ Boss::Boss(const CVector2D& pos)
 	m_rad = 50;
 
 }
+
 void Boss::Update()
 {
 	//カウントアップ
@@ -31,9 +32,11 @@ void Boss::Update()
 	}
 
 }
+
 void Boss::Collision(Base* b)
 {
-	switch (b->m_type) {
+	switch (b->m_type) 
+	{
 
 	case eType_Player:
 		if (m_type == eType_Enemy_Bullet && Base::CollisionCircle(this, b))
@@ -47,6 +50,7 @@ void Boss::Collision(Base* b)
 	}
 
 }
+
 void Boss::Draw()
 {
 	m_img.SetPos(m_pos);

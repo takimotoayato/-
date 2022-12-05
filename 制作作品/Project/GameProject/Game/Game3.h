@@ -1,7 +1,8 @@
 #pragma once
 #include "../Base/Base.h"
 
-class Game3 : public Base {
+class Game3 : public Base
+{
 public:
 	Game3();
 	~Game3();

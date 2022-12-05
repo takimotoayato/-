@@ -9,13 +9,16 @@ Gameover::Gameover() :Base(eType_Gameclear), m_Gameover_text("C:\\Windows\\Fonts
 
 }
 
-Gameover::~Gameover() {
+Gameover::~Gameover()
+{
 
 }
 
-void Gameover::Update() {
+void Gameover::Update()
+{
 	//ボタン5で画面を破棄
-	if (PUSH(CInput::eButton5)) {
+	if (PUSH(CInput::eButton5)) 
+	{
 		//全てのオブジェクトを破棄
 		Base::KillAll();
 		//タイトルシーン
