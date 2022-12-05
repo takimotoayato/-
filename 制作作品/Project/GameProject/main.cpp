@@ -3,9 +3,10 @@
 #define SCREEN_WIDTH 1920
 #define SCREEN_HEIGHT 1080
 //Œ³‚ÌƒXƒNƒŠ[ƒ“‚Ì‘å‚«‚³
-//#define SCREEN_WIDTH 1280
-//#define SCREEN_HEIGHT 720
-
+/*
+#define SCREEN_WIDTH 1280
+#define SCREEN_HEIGHT 720
+*/
 #include "Base/Base.h"
 #include "Game/Player.h"
 #include "Game/Enemy.h"
