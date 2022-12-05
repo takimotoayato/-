@@ -1,5 +1,6 @@
 #include "Game.h"
 #include "Game2.h"
+#include "Game3.h"
 #include "Player.h"
 #include "Enemy.h"
 #include "Boss.h"
@@ -62,7 +63,7 @@ void Game2::Update()
 		//全てのオブジェクトを破棄
 		Base::KillAll();
 		//ゲームシーン
-		Base::Add(new Gameclear());
+		Base::Add(new Game3());
 
 	}
 	if (!Base::FindObject(eType_Player)) {
