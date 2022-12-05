@@ -33,7 +33,8 @@ void Bullet::Draw()
 
 void Bullet::Collision(Base* b)
 {
-	switch (b->m_type) {
+	switch (b->m_type) 
+	{
 	case eType_Field:
 		if (Map* m = dynamic_cast<Map*>(b)) 
 		{

@@ -1,6 +1,7 @@
 #pragma once
 #include <GLLibrary.h>
-enum {
+enum 
+{
 	eType_Wall,
 	eType_Field,
 	eType_trap,
@@ -30,7 +31,8 @@ enum {
 //重力加速度
 #define GRAVITY (9.8f/20)
 
-class Base {
+class Base 
+{
 public:
 	//オブジェクトの種類
 	int m_type;
@@ -86,7 +88,8 @@ public:
 	/// <summary>
 	/// 削除フラグON
 	/// </summary>
-	void SetKill() {
+	void SetKill() 
+	{
 		m_kill = true;
 	}
 	/// <summary>
