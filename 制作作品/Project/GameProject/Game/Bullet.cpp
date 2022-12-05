@@ -39,6 +39,9 @@ void Bullet::Collision(Base* b)
 			int t = m->CollisionMap(m_pos);
 			if (t != 0)
 				SetKill();
+			//エフェクト生成
+			Base::Add(new Effect(b->m_pos));
+
 		}
 		break;
 	case eType_Player:
@@ -46,6 +49,9 @@ void Bullet::Collision(Base* b)
 		{
 			SetKill();
 			b->SetKill();
+			//エフェクト生成
+			Base::Add(new Effect(b->m_pos));
+
 		}
 		break;
 	case eType_Enemy:
@@ -53,6 +59,9 @@ void Bullet::Collision(Base* b)
 		{
 			SetKill();
 			b->SetKill();
+			//エフェクト生成
+			Base::Add(new Effect(b->m_pos));
+
 		}
 		break;
 	case eType_Boss:
@@ -60,6 +69,9 @@ void Bullet::Collision(Base* b)
 		{
 			SetKill();
 			b->SetKill();
+			//エフェクト生成
+			Base::Add(new Effect(b->m_pos));
+
 		}
 		break;
 	case eType_kabe:
@@ -67,6 +79,9 @@ void Bullet::Collision(Base* b)
 		{
 			SetKill();
 			b->SetKill();
+			//エフェクト生成
+			Base::Add(new Effect(b->m_pos));
+
 		}
 		break;
 

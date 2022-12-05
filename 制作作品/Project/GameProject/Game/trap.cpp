@@ -1,4 +1,5 @@
 #include "trap.h"
+#include"Effect.h"
 #include "Map.h"
 trap::trap(int type, const CVector2D& pos, float ang, float speed) : Base(type)
 {
@@ -35,6 +36,9 @@ void trap::Collision(Base* b)
 			int t = m->CollisionMap(m_pos);
 			if (t != 0)
 				SetKill();
+			//エフェクト生成
+			Base::Add(new Effect(b->m_pos));
+
 		}
 		break;
 	case eType_Player:
@@ -42,6 +46,9 @@ void trap::Collision(Base* b)
 		{
 			SetKill();
 			b->SetKill();
+			//エフェクト生成
+			Base::Add(new Effect(b->m_pos));
+
 		}
 		break;
 	case eType_Enemy:
@@ -49,6 +56,9 @@ void trap::Collision(Base* b)
 		{
 			SetKill();
 			b->SetKill();
+			//エフェクト生成
+			Base::Add(new Effect(b->m_pos));
+
 		}
 		break;
 	case eType_Boss:
@@ -56,6 +66,9 @@ void trap::Collision(Base* b)
 		{
 			SetKill();
 			b->SetKill();
+			//エフェクト生成
+			Base::Add(new Effect(b->m_pos));
+
 		}
 		break;
 
