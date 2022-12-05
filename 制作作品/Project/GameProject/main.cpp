@@ -25,6 +25,7 @@
 #include "Game/kabe.h"
 #include "Game/Gameclear.h"
 #include "Game/Gameover.h"
+#include"Game/Effect.h"
 //--------------------------------------------
 //グローバル変数領域
 //--------------------------------------------
@@ -116,7 +117,7 @@ void Init(void)
 		ADD_RESOURCE("ゲームオーバー", CImage::CreateImage("Image/ゲームオーバー.png"));
 		ADD_RESOURCE("gameover", CImage::CreateImage("Image/gameover.png"));
 		ADD_RESOURCE("シールド", CImage::CreateImage("Image/シールド.png"));
-
+		ADD_RESOURCE("Effect_Bomb", CImage::CreateImage("Image/Effect_Bomb.png"));
 
 //
 

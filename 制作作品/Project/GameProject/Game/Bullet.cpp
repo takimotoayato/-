@@ -1,5 +1,6 @@
 #include "Bullet.h"
 #include "kabe.h"
+#include"Effect.h"
 #include "Map.h"
 Bullet::Bullet(int type, const CVector2D& pos, float ang, float speed) : Base(type)
 {
