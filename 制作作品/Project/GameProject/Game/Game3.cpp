@@ -15,10 +15,10 @@ Game3::Game3() :Base(eType_Scene)
 {
 
 	//背景生成
-	Base::Add(new Wall());
+	//Base::Add(new Wall());
 	//プレイヤーの生成
 	//Base::Add(new Player(CVector2D(100,580)));
-	Base::Add(new Player(CVector2D(930, 940)));
+	//Base::Add(new Player(CVector2D(930, 940)));
 	//小型の敵の生成
 	/*
 	Base::Add(new Enemy(CVector2D(200, 200)));
@@ -39,9 +39,9 @@ Game3::Game3() :Base(eType_Scene)
 
 
 	//マップの生成
-	Base::Add(new Map());
+	//Base::Add(new Map());
 
-	Base::Add(new UI());
+	//Base::Add(new UI());
 
 }
 Game3::~Game3()
@@ -68,7 +68,7 @@ void Game3::Update()
 	*/
 	if (!Base::FindObject(eType_Enemy)) {
 		//全てのオブジェクトを破棄
-		//Base::KillAll();
+		Base::KillAll();
 		//ゲームシーン
 		Base::Add(new Gameclear());
 

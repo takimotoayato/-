@@ -39,9 +39,9 @@ Game2::Game2() :Base(eType_Scene)
 
 
 	//マップの生成
-	Base::Add(new Map());
+	//Base::Add(new Map());
 
-	Base::Add(new UI());
+	//Base::Add(new UI());
 
 }
 Game2::~Game2()
@@ -61,7 +61,7 @@ void Game2::Update()
 
 	if (!Base::FindObject(eType_Enemy)) {
 		//全てのオブジェクトを破棄
-		//Base::KillAll();
+		Base::SetKill();
 		//ゲームシーン
 		Base::Add(new Game3());
 
