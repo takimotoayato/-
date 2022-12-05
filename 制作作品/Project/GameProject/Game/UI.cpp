@@ -9,6 +9,7 @@ UI::UI() :Base(eType_UI) {
 }
 void UI::Draw()
 {
+	/*
 	int score = GameData::s_score;
 	for (int i = 0; i < 8; i++, score /= 10) {
 		int s = score % 10;
@@ -39,19 +40,5 @@ void UI::Draw()
 		m_img.SetPos(200, 200);
 		m_img.Draw();
 	}
-
-	/*
-	Base* goal = Base::FindObject(eType_Goal);
-
-	//“G‚ª‚¢‚È‚¯‚ê‚Î
-	if (goal == nullptr) {
-		//ƒQ[ƒ€ƒNƒŠƒA‚Ì•\Ž¦
-		m_img.SetRect(0, 64, 0 + 160, 64 + 32);
-		m_img.SetSize(160, 32);
-		m_img.SetPos(100, 200);
-		m_img.Draw();
-	}
 	*/
-
-
 }

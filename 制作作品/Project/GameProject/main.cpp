@@ -109,6 +109,7 @@ void Init(void)
 		ADD_RESOURCE("紫ボム", CImage::CreateImage("Image/紫ボム.png"));
 		ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 		ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
+		ADD_RESOURCE("仮タイトル画面", CImage::CreateImage("Image/仮タイトル画面.png"));
 		ADD_RESOURCE("haikei1", CImage::CreateImage("Image/haikei1.png"));
 		ADD_RESOURCE("MapTipB2", CImage::CreateImage("Image/MapTipB2.png"));
 		ADD_RESOURCE("ゲームクリア2", CImage::CreateImage("Image/ゲームクリア2.png"));
