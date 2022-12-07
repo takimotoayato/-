@@ -22,7 +22,7 @@ Sousahou::~Sousahou()
 
 void Sousahou::Update()
 {
-	//ボタン１でタイトル破棄
+	//ボタン3でタイトル破棄
 	if (PUSH(CInput::eButton3)) 
 	{
 		m_kill = true;
