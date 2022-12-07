@@ -56,6 +56,9 @@
     <ClCompile Include="Game\Effect.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="Game\Sousahou.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
@@ -118,6 +121,9 @@
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="Game\Effect.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Sousahou.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>

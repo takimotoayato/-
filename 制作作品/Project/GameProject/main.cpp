@@ -26,6 +26,7 @@
 #include "Game/Gameclear.h"
 #include "Game/Gameover.h"
 #include"Game/Effect.h"
+#include "Game/Sousahou.h"
 //--------------------------------------------
 //ƒOƒ[ƒoƒ‹•Ï”—Ìˆæ
 //--------------------------------------------
