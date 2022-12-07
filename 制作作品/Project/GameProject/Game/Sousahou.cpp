@@ -41,7 +41,7 @@ void Sousahou::Draw()
 
 	//文字表示
 	m_title_text.Draw(680, 120, 0, 0, 0, "     操作方法");
-	m_title_text.Draw(64, 320, 0, 0, 0, "矢印キーで移動");
+	m_title_text.Draw(64, 320, 0, 0, 0, "↑↓→←キーで移動");
 	m_title_text.Draw(64, 520, 0, 0, 0, "スペースキーで攻撃");
 	m_title_text.Draw(64, 720, 0, 0, 0, "Zボタンでトラップ設置");
 	m_title_text.Draw(64, 920, 0, 0, 0, "Cボタンでタイトル画面へ戻る");
