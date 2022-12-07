@@ -33,8 +33,8 @@ Game::Game() :Base(eType_Scene)
 	Base::Add(new Boss(CVector2D(100, 100)));
 	Base::Add(new Boss(CVector2D(1800, 100)));
 	Base::Add(new Boss(CVector2D(900, 300)));
-	Base::Add(new Boss(CVector2D(1600, 500)));*/
-	Base::Add(new Boss(CVector2D(900, 100)));
+	Base::Add(new Boss(CVector2D(1600, 500)));
+	Base::Add(new Boss(CVector2D(900, 100)));*/
 
 
 	//É}ÉbÉvÇÃê∂ê¨
