@@ -11,6 +11,7 @@
 #include "Game/Player.h"
 #include "Game/Enemy.h"
 #include "Game/Boss.h"
+#include "Game/Boss2.h"
 #include "Game/Bullet.h"
 #include "Game/Map.h"
 #include "Game/Title.h"
