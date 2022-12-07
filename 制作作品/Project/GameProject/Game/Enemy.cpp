@@ -4,7 +4,7 @@
 Enemy::Enemy(const CVector2D& pos)
 	:Base(eType_Enemy)
 {
-	m_img = COPY_RESOURCE("Enemy3", CImage);
+	m_img = COPY_RESOURCE("ウイルス", CImage);
 	m_pos = pos;
 	//中心を設定
 	m_img.SetCenter(16, 16);

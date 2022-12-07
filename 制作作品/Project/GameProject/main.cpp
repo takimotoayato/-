@@ -101,6 +101,8 @@ void Init(void)
 		ADD_RESOURCE("Enemy", CImage::CreateImage("Image/Enemy.png"));
 		ADD_RESOURCE("Enemy2", CImage::CreateImage("Image/Enemy2.png"));
 		ADD_RESOURCE("Enemy3", CImage::CreateImage("Image/Enemy3.png"));
+		ADD_RESOURCE("ウイルス", CImage::CreateImage("Image/ウイルス.png"));
+		ADD_RESOURCE("ウイルス2", CImage::CreateImage("Image/ウイルス2.png"));
 		ADD_RESOURCE("Bullet", CImage::CreateImage("Image/Bullet.png"));
 		ADD_RESOURCE("Bullet2", CImage::CreateImage("Image/Bullet2.png"));
 		ADD_RESOURCE("Bullet3", CImage::CreateImage("Image/Bullet3.png"));
