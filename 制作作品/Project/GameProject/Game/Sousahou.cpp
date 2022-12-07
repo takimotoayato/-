@@ -15,7 +15,7 @@ Sousahou::~Sousahou()
 	//Base::KillAll();
 	//タイトル破棄時にゲームシーンへ移行
 	//Base::Add(new Game());
-	Base::Add(new Title());
+	
 
 
 }
@@ -23,8 +23,10 @@ Sousahou::~Sousahou()
 void Sousahou::Update()
 {
 	//ボタン１でタイトル破棄
-	if (PUSH(CInput::eButton3)) {
+	if (PUSH(CInput::eButton3)) 
+	{
 		m_kill = true;
+	Base::Add(new Title());
 	}
 
 	//m_ang += 0.02f;
@@ -39,8 +41,9 @@ void Sousahou::Draw()
 
 	//文字表示
 	m_title_text.Draw(680, 120, 0, 0, 0, "     操作方法");
-	m_title_text.Draw(64, 320, 0, 0, 0, "スペースキーで攻撃");
-	m_title_text.Draw(64, 520, 0, 0, 0, "Zボタンでトラップ設置");
+	m_title_text.Draw(64, 320, 0, 0, 0, "矢印キーで移動");
+	m_title_text.Draw(64, 520, 0, 0, 0, "スペースキーで攻撃");
+	m_title_text.Draw(64, 720, 0, 0, 0, "Zボタンでトラップ設置");
 	m_title_text.Draw(64, 920, 0, 0, 0, "Cボタンでタイトル画面へ戻る");
 
 }

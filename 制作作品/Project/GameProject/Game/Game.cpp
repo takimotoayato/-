@@ -67,6 +67,9 @@ void Game::Update()
 
 	}
 	*/
+
+	
+
 	if (!Base::FindObject(eType_Enemy))
 	{
 		//全てのオブジェクトを破棄
