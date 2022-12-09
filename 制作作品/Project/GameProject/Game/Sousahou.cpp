@@ -29,7 +29,6 @@ void Sousahou::Update()
 	Base::Add(new Title());
 	}
 
-	//m_ang += 0.02f;
 
 
 }

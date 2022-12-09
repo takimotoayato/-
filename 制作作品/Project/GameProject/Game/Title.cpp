@@ -28,7 +28,7 @@ void Title::Update()
 	//タイトル破棄時にゲームシーンへ移行
 	Base::Add(new Game());
 	}
-
+/**/
 	//ボタン5でタイトル破棄
 	if (PUSH(CInput::eButton2))
 	{

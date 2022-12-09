@@ -18,6 +18,7 @@ Game::Game() :Base(eType_Scene)
 	//プレイヤーの生成
 	//Base::Add(new Player(CVector2D(100,580)));
 	Base::Add(new Player(CVector2D(930, 940)));
+	
 	//小型の敵の生成
 	/*
 	Base::Add(new Enemy(CVector2D(200, 200)));
@@ -78,11 +79,12 @@ void Game::Update()
 	if (!Base::FindObject(eType_Enemy))
 	{
 		//全てのオブジェクトを破棄
-		//Base::KillAll();
+		Base::SetKill();
 		//ゲームシーン
 		Base::Add(new Game2());
 		
 	}
+
 	if (!Base::FindObject(eType_Player))
 	{
 		//全てのオブジェクトを破棄

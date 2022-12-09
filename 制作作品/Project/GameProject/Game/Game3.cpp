@@ -33,9 +33,9 @@ Game3::Game3() :Base(eType_Scene)
 	/*
 	Base::Add(new Boss(CVector2D(600, 600)));
 	Base::Add(new Boss(CVector2D(100, 100)));
-	Base::Add(new Boss(CVector2D(1800, 100)));
+	Base::Add(new Boss(CVector2D(1800, 100)));*/
 	Base::Add(new Boss(CVector2D(900, 300)));
-	Base::Add(new Boss(CVector2D(1600, 500)));*/
+	Base::Add(new Boss(CVector2D(1600, 500)));
 	Base::Add(new Boss2(CVector2D(900, 100)));
 
 

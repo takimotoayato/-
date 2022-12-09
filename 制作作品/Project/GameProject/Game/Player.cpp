@@ -8,16 +8,17 @@ Player::Player(const CVector2D& pos)
 {
 	m_img = COPY_RESOURCE("í“¬‹@5", CImage);
 	m_pos = pos;
+	m_pos_old = pos;
 	//’†S‚ğİ’è
 	//m_img.SetCenter(16, 16);
-	 m_img.SetCenter(25, 25);
+	m_img.SetCenter(25, 25);
 	//‹éŒ`‚ğİ’è
 	//m_rect = CRect(-16, -16, 16, 16);
 	//m_rect = CRect(-32, -32, 32, 32);
 	m_rect = CRect(-25, -25, 25, 25);
 	//”¼Œa
 	//m_rad = 16;
-	 m_rad = 25;
+	m_rad = 25;
 	m_ang;
 }
 
