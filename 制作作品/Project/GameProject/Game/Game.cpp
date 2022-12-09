@@ -3,6 +3,7 @@
 #include "Player.h"
 #include "Enemy.h"
 #include "Boss.h"
+#include "Boss2.h"
 #include "Title.h"
 #include "Map.h"
 #include "UI.h"
@@ -36,6 +37,7 @@ Game::Game() :Base(eType_Scene)
 	Base::Add(new Boss(CVector2D(900, 300)));
 	Base::Add(new Boss(CVector2D(1600, 500)));
 	Base::Add(new Boss(CVector2D(900, 100)));
+	Base::Add(new Boss2(CVector2D(900, 300)));
 	*/
 
 

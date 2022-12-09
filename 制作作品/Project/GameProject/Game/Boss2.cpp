@@ -1,4 +1,5 @@
 #include "Boss2.h"
+#include "Boss.h"
 #include "Bullet.h"
 Boss2::Boss2(const CVector2D& pos)
 	:Base(eType_Enemy)
@@ -43,6 +44,7 @@ void Boss2::Collision(Base* b)
 		{
 			SetKill();
 			b->SetKill();
+			
 		}
 		break;
 
