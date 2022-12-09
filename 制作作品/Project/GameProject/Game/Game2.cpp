@@ -29,12 +29,12 @@ Game2::Game2() :Base(eType_Scene)
 	Base::Add(new Enemy(CVector2D(32 * 17, 32 * 14)));
 	Base::Add(new Enemy(CVector2D(32 * 37, 32 * 10)));*/
 	//ëÂå^ÇÃìGÇÃê∂ê¨
-	/*
+	/**/
 	Base::Add(new Boss(CVector2D(600, 600)));
 	Base::Add(new Boss(CVector2D(100, 100)));
 	Base::Add(new Boss(CVector2D(1800, 100)));
 	Base::Add(new Boss(CVector2D(900, 300)));
-	Base::Add(new Boss(CVector2D(1600, 500)));*/
+	Base::Add(new Boss(CVector2D(1600, 500)));
 	Base::Add(new Boss(CVector2D(900, 100)));
 
 
