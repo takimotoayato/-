@@ -69,6 +69,12 @@ void Game3::Update()
 
 	}
 	*/
+	//ボタン3でタイトルへ戻る
+	if (PUSH(CInput::eButton3))
+	{
+		Base::KillAll();
+		Base::Add(new Title());
+	}
 	if (!Base::FindObject(eType_Enemy))
 	{
 		//全てのオブジェクトを破棄
