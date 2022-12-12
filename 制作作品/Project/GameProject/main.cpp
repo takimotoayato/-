@@ -2,11 +2,6 @@
 #include <GLLibrary.h>
 #define SCREEN_WIDTH 1920
 #define SCREEN_HEIGHT 1080
-//元のスクリーンの大きさ
-/*
-#define SCREEN_WIDTH 1280
-#define SCREEN_HEIGHT 720
-*/
 #include "Base/Base.h"
 #include "Game/Player.h"
 #include "Game/Enemy.h"
@@ -124,11 +119,8 @@ void Init(void)
 		ADD_RESOURCE("gameover", CImage::CreateImage("Image/gameover.png"));
 		ADD_RESOURCE("シールド", CImage::CreateImage("Image/シールド.png"));
 		ADD_RESOURCE("Effect_Bomb", CImage::CreateImage("Image/Effect_Bomb.png"));
-
-//
-
-	//
-	Base::Add(new Title);
+		//タイトル画面生成
+		Base::Add(new Title);
 	
 
 
