@@ -36,10 +36,11 @@ void trap::Collision(Base* b)
 		{
 			int t = m->CollisionMap(m_pos);
 			if (t != 0)
+			{ 
 				SetKill();
 			//エフェクト生成
-			Base::Add(new Effect(b->m_pos));
-
+			//Base::Add(new Effect(b->m_pos));
+			}
 		}
 		break;
 	case eType_Player:

@@ -40,9 +40,12 @@ void Bullet::Collision(Base* b)
 		{
 			int t = m->CollisionMap(m_pos);
 			if (t != 0)
-				SetKill();
+			{
+			SetKill();
 			//エフェクト生成
 			//Base::Add(new Effect(m_pos));
+			}
+				
 
 		}
 		break;
@@ -52,7 +55,7 @@ void Bullet::Collision(Base* b)
 			SetKill();
 			b->SetKill();
 			//エフェクト生成
-			//Base::Add(new Effect(b->m_pos));
+			Base::Add(new Effect(b->m_pos));
 
 		}
 		break;
