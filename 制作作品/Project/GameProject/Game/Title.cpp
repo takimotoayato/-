@@ -1,6 +1,7 @@
 #include "Title.h"
 #include "Sousahou.h"
 #include "Game.h"
+#include "GameEX.h"
 Title::Title() :Base(eType_Scene),
 m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 {
@@ -29,7 +30,7 @@ void Title::Update()
 	Base::Add(new Game());
 	}
 /**/
-	//ボタン5でタイトル破棄
+	//ボタン2でタイトル破棄
 	if (PUSH(CInput::eButton2))
 	{
 		m_kill = true;
@@ -38,7 +39,15 @@ void Title::Update()
 		//タイトル破棄時にゲームシーンへ移行
 		Base::Add(new Sousahou());
 	}
-
+	//ボタン4でタイトル破棄
+	if (PUSH(CInput::eButton4))
+	{
+		m_kill = true;
+		////全てのオブジェクトを破棄
+		//Base::KillAll();
+		//タイトル破棄時にゲームシーンへ移行
+		Base::Add(new GameEX());
+	}
 
 
 
@@ -55,7 +64,8 @@ void Title::Draw()
 
 	//文字表示
 	m_title_text.Draw(580, 820, 0, 0, 0, "スペースキーでゲームスタート");
-	m_title_text.Draw(580, 920, 0, 0, 0, "     Xキーで操作説明画面へ");
+	m_title_text.Draw(580, 870, 0, 0, 0, "Vキーで無限耐久モード");
+	m_title_text.Draw(580, 920, 0, 0, 0, "Xキーで操作説明画面へ");
 	/*m_title_text.Draw(64, 720, 0, 0, 0, "     操作方法");
 	m_title_text.Draw(64, 820, 0, 0, 0, "スペースキーで攻撃");
 	m_title_text.Draw(64, 920, 0, 0, 0, "Zボタンでトラップ設置");*/
