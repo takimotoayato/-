@@ -38,20 +38,14 @@ Game2::Game2() :Base(eType_Scene)
 	Base::Add(new Boss(CVector2D(900, 100)));
 
 
-	//マップの生成
-	//Base::Add(new Map());
-
-	//Base::Add(new UI());
+	
 
 }
 Game2::~Game2()
 {
 
 
-	//全てのオブジェクトを破棄
-	//Base::KillAll();
-	//タイトルシーンへ
-	//Base::Add(new Title());
+	
 
 }
 
@@ -64,6 +58,7 @@ void Game2::Update()
 		Base::KillAll();
 		Base::Add(new Title());
 	}
+
 	if (!Base::FindObject(eType_Enemy)) 
 	{
 		//全てのオブジェクトを破棄

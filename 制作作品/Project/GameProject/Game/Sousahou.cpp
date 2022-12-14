@@ -11,10 +11,7 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 
 Sousahou::~Sousahou()
 {
-	////全てのオブジェクトを破棄
-	//Base::KillAll();
-	//タイトル破棄時にゲームシーンへ移行
-	//Base::Add(new Game());
+	
 	
 
 

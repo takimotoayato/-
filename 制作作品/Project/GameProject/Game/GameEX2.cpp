@@ -41,20 +41,14 @@ GameEX2::GameEX2() :Base(eType_Scene)
 	Base::Add(new Boss(CVector2D(900, 100)));
 
 
-	//マップの生成
-	//Base::Add(new Map());
-
-	//Base::Add(new UI());
+	
 
 }
 GameEX2::~GameEX2()
 {
 
 
-	//全てのオブジェクトを破棄
-	//Base::KillAll();
-	//タイトルシーンへ
-	//Base::Add(new Title());
+	
 
 }
 

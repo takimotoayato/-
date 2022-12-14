@@ -56,25 +56,13 @@ GameEX::~GameEX()
 {
 
 
-	//全てのオブジェクトを破棄
-	//Base::KillAll();
-	//タイトルシーンへ
-	//Base::Add(new Title());
+	
 
 }
 
 void GameEX::Update()
 {
-	/*
-	if (!Base::FindObject(eType_Enemy))
-	{
-		//全てのオブジェクトを破棄
-		Base::KillAll();
-		//ゲームシーン
-		Base::Add(new Gameclear());
-
-	}
-	*/
+	
 
 	//ボタン3でタイトルへ戻る
 	if (PUSH(CInput::eButton3))

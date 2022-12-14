@@ -39,10 +39,7 @@ Game3::Game3() :Base(eType_Scene)
 	Base::Add(new Boss(CVector2D(900, 100)));
 
 
-	//マップの生成
-	//Base::Add(new Map());
-
-	//Base::Add(new UI());
+	
 
 }
 
@@ -50,25 +47,13 @@ Game3::~Game3()
 {
 
 
-	//全てのオブジェクトを破棄
-	//Base::KillAll();
-	//タイトルシーンへ
-	//Base::Add(new Title());
+	
 
 }
 
 void Game3::Update()
 {
-	/*
-	if (!Base::FindObject(eType_Enemy))
-	{
-		//全てのオブジェクトを破棄
-		Base::KillAll();
-		//ゲームシーン
-		Base::Add(new Gameclear());
-
-	}
-	*/
+	
 	//ボタン3でタイトルへ戻る
 	if (PUSH(CInput::eButton3))
 	{
