@@ -19,7 +19,6 @@ Game::Game() :Base(eType_Scene)
 	//プレイヤーの生成
 	//Base::Add(new Player(CVector2D(100,580)));
 	Base::Add(new Player(CVector2D(930, 940)));
-	
 	//小型の敵の生成
 	/**/
 	Base::Add(new Enemy(CVector2D(200, 200)));
@@ -29,21 +28,8 @@ Game::Game() :Base(eType_Scene)
 	Base::Add(new Enemy(CVector2D(1700, 200)));
 	Base::Add(new Enemy(CVector2D(32 * 17, 32 * 14)));
 	Base::Add(new Enemy(CVector2D(32 * 37, 32 * 10)));
-	//大型の敵の生成
-	/*
-	Base::Add(new Boss(CVector2D(600, 600)));
-	Base::Add(new Boss(CVector2D(100, 100)));
-	Base::Add(new Boss(CVector2D(1800, 100)));
-	Base::Add(new Boss(CVector2D(900, 300)));
-	Base::Add(new Boss(CVector2D(1600, 500)));
-	Base::Add(new Boss(CVector2D(900, 100)));
-	Base::Add(new Boss2(CVector2D(900, 300)));
-	*/
-
-
 	//マップの生成
 	Base::Add(new Map());
-
 	Base::Add(new UI());
 
 }

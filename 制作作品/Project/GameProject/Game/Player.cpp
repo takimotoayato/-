@@ -39,10 +39,7 @@ void Player::Update()
 	if (HOLD(CInput::eDown))
 		m_pos.y += speed;
 
-	//マウスへのベクトル
-	//CVector2D vec = CInput::GetMousePoint() - m_pos;
-	//回転値を逆算
-	//m_ang = atan2(vec.x, vec.y);
+	
 	//スペースキーで弾を発射
 	if (PUSH(CInput::eButton5))
 	{

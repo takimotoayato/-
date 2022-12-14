@@ -16,18 +16,6 @@ Game2::Game2() :Base(eType_Scene)
 
 	//”wŒi¶¬
 	Base::Add(new Wall());
-	//ƒvƒŒƒCƒ„[‚Ì¶¬
-	//Base::Add(new Player(CVector2D(100,580)));
-	//Base::Add(new Player(CVector2D(930, 940)));
-	//¬Œ^‚Ì“G‚Ì¶¬
-	/*
-	Base::Add(new Enemy(CVector2D(200, 200)));
-	Base::Add(new Enemy(CVector2D(500, 500)));
-	Base::Add(new Enemy(CVector2D(700, 700)));
-	Base::Add(new Enemy(CVector2D(1400, 200)));
-	Base::Add(new Enemy(CVector2D(1700, 200)));
-	Base::Add(new Enemy(CVector2D(32 * 17, 32 * 14)));
-	Base::Add(new Enemy(CVector2D(32 * 37, 32 * 10)));*/
 	//‘åŒ^‚Ì“G‚Ì¶¬
 	/**/
 	Base::Add(new Boss(CVector2D(600, 600)));
@@ -41,6 +29,7 @@ Game2::Game2() :Base(eType_Scene)
 	
 
 }
+
 Game2::~Game2()
 {
 

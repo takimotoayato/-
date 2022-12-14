@@ -15,11 +15,7 @@
 Game3::Game3() :Base(eType_Scene)
 {
 
-	//”wŒi¶¬
-	//Base::Add(new Wall());
-	//ƒvƒŒƒCƒ„[‚Ì¶¬
-	//Base::Add(new Player(CVector2D(100,580)));
-	//Base::Add(new Player(CVector2D(930, 940)));
+	
 	//¬Œ^‚Ì“G‚Ì¶¬
 	/**/
 	Base::Add(new Enemy(CVector2D(200, 200)));
