@@ -67,8 +67,8 @@ void Title::Draw()
 
 	//文字表示
 	m_title_text.Draw(580, 820, 0, 0, 0, "スペースキーでゲームスタート");
-	m_title_text.Draw(580, 870, 0, 0, 0, "Vキーで無限耐久モード");
-	m_title_text.Draw(580, 920, 0, 0, 0, "Xキーで操作説明画面へ");
+	m_title_text.Draw(580, 880, 0, 0, 0, "Vキーで無限耐久モード");
+	m_title_text.Draw(580, 940, 0, 0, 0, "Xキーで操作説明画面へ");
 	
 
 }
