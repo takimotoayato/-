@@ -18,21 +18,21 @@ Game3::Game3() :Base(eType_Scene)
 
 	
 	//è¨å^ÇÃìGÇÃê∂ê¨
-	/*
+	/**/
 	Base::Add(new Enemy(CVector2D(200, 200)));
 	Base::Add(new Enemy(CVector2D(500, 500)));
 	Base::Add(new Enemy(CVector2D(700, 700)));
 	Base::Add(new Enemy(CVector2D(1400, 200)));
 	Base::Add(new Enemy(CVector2D(1700, 200)));
 	Base::Add(new Enemy(CVector2D(32 * 17, 32 * 14)));
-	Base::Add(new Enemy(CVector2D(32 * 37, 32 * 10)));*/
+	Base::Add(new Enemy(CVector2D(32 * 37, 32 * 10)));
 	//ëÂå^ÇÃìGÇÃê∂ê¨
-	/*
+	/**/
 	Base::Add(new Boss(CVector2D(600, 600)));
 	Base::Add(new Boss(CVector2D(100, 100)));
 	Base::Add(new Boss(CVector2D(1800, 100)));
 	Base::Add(new Boss(CVector2D(1600, 500)));
-	Base::Add(new Boss(CVector2D(900, 100)));*/
+	Base::Add(new Boss(CVector2D(900, 100)));
 	Base::Add(new Boss2(CVector2D(900, 300)));
 
 	

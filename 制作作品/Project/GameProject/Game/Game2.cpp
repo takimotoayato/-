@@ -18,12 +18,12 @@ Game2::Game2() :Base(eType_Scene)
 	//îwåiê∂ê¨
 	Base::Add(new Wall());
 	//ëÂå^ÇÃìGÇÃê∂ê¨
-	/*
+	/**/
 	Base::Add(new Boss(CVector2D(600, 600)));
 	Base::Add(new Boss(CVector2D(100, 100)));
 	Base::Add(new Boss(CVector2D(1800, 100)));
 	Base::Add(new Boss(CVector2D(900, 300)));
-	Base::Add(new Boss(CVector2D(1600, 500)));*/
+	Base::Add(new Boss(CVector2D(1600, 500)));
 	Base::Add(new Boss(CVector2D(900, 100)));
 
 
