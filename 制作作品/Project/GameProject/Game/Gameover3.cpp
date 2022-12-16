@@ -36,12 +36,25 @@ void Gameover3::Draw()
 	m_img.Draw();
 	m_img.SetSize(1920, 1080);
 	m_Gameover_text.Draw(64, 950, 0, 0, 0, "スペースキーでタイトルに戻る");
+
+
+	//ウイルス出力
+	m_img4.Draw();
+	//大きさ設定
+	m_img4.SetSize(500, 500);
+	//座標設定   //横   縦
+	m_img4.SetPos(950, 300);
+	//回転
+	//m_img4.SetAng(m_ang);
+	//中心位置設定
+	m_img4.SetCenter(250, 250);
+
 	//ウイルス出力
 	m_img2.Draw();
 	//大きさ設定
 	m_img2.SetSize(100, 100);
 	//座標設定
-	m_img2.SetPos(1000, 300);
+	m_img2.SetPos(1000, 800);
 	//回転
 	m_img2.SetAng(m_ang);
 	//中心位置設定

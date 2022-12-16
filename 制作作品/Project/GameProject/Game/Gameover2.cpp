@@ -57,5 +57,15 @@ void Gameover2::Draw()
 	//中心位置設定
 	m_img3.SetCenter(50, 50);
 
+	//ウイルス出力
+	m_img3.Draw();
+	//大きさ設定
+	m_img3.SetSize(300, 300);
+	//座標設定
+	m_img3.SetPos(100, 100);
+	//回転
+	m_img3.SetAng(m_ang);
+	//中心位置設定
+	m_img3.SetCenter(150, 150);
 
 }
