@@ -24,6 +24,8 @@
 #include "Game/kabe.h"
 #include "Game/Gameclear.h"
 #include "Game/Gameover.h"
+#include "Game/Gameover2.h"
+#include "Game/Gameover3.h"
 #include"Game/Effect.h"
 #include "Game/Sousahou.h"
 //--------------------------------------------

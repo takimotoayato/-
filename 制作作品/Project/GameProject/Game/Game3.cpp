@@ -12,6 +12,7 @@
 #include"GameData.h"
 #include "Gameclear.h"
 #include "Gameover.h"
+#include "Gameover3.h"
 Game3::Game3() :Base(eType_Scene)
 {
 
@@ -69,7 +70,7 @@ void Game3::Update()
 		//全てのオブジェクトを破棄
 		Base::KillAll();
 		//ゲームシーン
-		Base::Add(new Gameover());
+		Base::Add(new Gameover3());
 
 	}
 

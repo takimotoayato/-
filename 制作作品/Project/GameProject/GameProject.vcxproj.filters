@@ -71,6 +71,12 @@
     <ClCompile Include="Game\GameEX3.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="Game\Gameover2.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Gameover3.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
@@ -148,6 +154,12 @@
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="Game\GameEX3.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Gameover2.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Gameover3.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>

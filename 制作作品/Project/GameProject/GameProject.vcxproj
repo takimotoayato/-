@@ -25,6 +25,8 @@
     <ClCompile Include="Game\GameEX2.cpp" />
     <ClCompile Include="Game\GameEX3.cpp" />
     <ClCompile Include="Game\Gameover.cpp" />
+    <ClCompile Include="Game\Gameover2.cpp" />
+    <ClCompile Include="Game\Gameover3.cpp" />
     <ClCompile Include="Game\Gemeclear.cpp" />
     <ClCompile Include="Game\kabe.cpp" />
     <ClCompile Include="Game\Map.cpp" />
@@ -52,6 +54,8 @@
     <ClInclude Include="Game\GameEX2.h" />
     <ClInclude Include="Game\GameEX3.h" />
     <ClInclude Include="Game\Gameover.h" />
+    <ClInclude Include="Game\Gameover2.h" />
+    <ClInclude Include="Game\Gameover3.h" />
     <ClInclude Include="Game\kabe.h" />
     <ClInclude Include="Game\Map.h" />
     <ClInclude Include="Game\Player.h" />
