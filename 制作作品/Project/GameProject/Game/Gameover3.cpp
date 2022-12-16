@@ -50,26 +50,58 @@ void Gameover3::Draw()
 	m_img4.SetCenter(250, 250);
 
 	//ウイルス出力
-	m_img2.Draw();
+	m_img3.Draw();
 	//大きさ設定
-	m_img2.SetSize(100, 100);
-	//座標設定
-	m_img2.SetPos(1000, 800);
+	m_img3.SetSize(300, 300);
+	//座標設定   //横   縦
+	m_img3.SetPos(150, 150);
 	//回転
-	m_img2.SetAng(m_ang);
+	//m_img4.SetAng(m_ang);
 	//中心位置設定
-	m_img2.SetCenter(50, 50);
+	m_img3.SetCenter(150, 150);
 
+	//ウイルス出力
+	m_img3.Draw();
+	//大きさ設定
+	m_img3.SetSize(300, 300);
+	//座標設定   //横   縦
+	m_img3.SetPos(1800, 150);
+	//回転
+	//m_img4.SetAng(m_ang);
+	//中心位置設定
+	m_img3.SetCenter(150, 150);
 
 	//ウイルス出力
 	m_img2.Draw();
 	//大きさ設定
-	m_img2.SetSize(100, 100);
-	//座標設定
+	m_img2.SetSize(150, 150);
+	//座標設定   //横   縦
+	m_img2.SetPos(1000, 800);
+	//回転
+	m_img2.SetAng(m_ang);
+	//中心位置設定
+	m_img2.SetCenter(75, 75);
+
+	//ウイルス出力
+	m_img2.Draw();
+	//大きさ設定
+	m_img2.SetSize(150, 150);
+	//座標設定   //横   縦
 	m_img2.SetPos(200, 800);
 	//回転
 	m_img2.SetAng(m_ang);
 	//中心位置設定
-	m_img2.SetCenter(50, 50);
+	m_img2.SetCenter(75, 75);
+
+	//ウイルス出力
+	m_img2.Draw();
+	//大きさ設定
+	m_img2.SetSize(150, 150);
+	//座標設定   //横   縦
+	m_img2.SetPos(1800, 900);
+	//回転
+	m_img2.SetAng(m_ang);
+	//中心位置設定
+	m_img2.SetCenter(75, 75);
 
 }

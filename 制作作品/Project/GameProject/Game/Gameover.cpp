@@ -7,6 +7,7 @@ Gameover::Gameover() :Base(eType_Gameclear), m_Gameover_text("C:\\Windows\\Fonts
 {
 	m_img = COPY_RESOURCE("ゲームオーバー", CImage);
 	m_img2 = COPY_RESOURCE("ウイルス", CImage);
+	m_img3 = COPY_RESOURCE("ウイルス", CImage);
 }
 
 Gameover::~Gameover()
@@ -37,24 +38,56 @@ void Gameover::Draw()
 	//ウイルス出力
 	m_img2.Draw();
 	//大きさ設定
-	m_img2.SetSize(100, 100);
-	//座標設定
+	m_img2.SetSize(150, 150);
+	//座標設定   //横   縦
 	m_img2.SetPos(1000, 300);
 	//回転
 	m_img2.SetAng(m_ang);
 	//中心位置設定
-	m_img2.SetCenter(50, 50);
-
+	m_img2.SetCenter(75, 75);
 
 	//ウイルス出力
-	m_img2.Draw();
+	m_img3.Draw();
 	//大きさ設定
-	m_img2.SetSize(100, 100);
-	//座標設定
-	m_img2.SetPos(200, 800);
+	m_img3.SetSize(150, 150);
+	//座標設定   //横   縦
+	m_img3.SetPos(200, 800);
 	//回転
-	m_img2.SetAng(m_ang);
+	//m_img3.SetAng(m_ang);
 	//中心位置設定
-	m_img2.SetCenter(50, 50);
+	m_img3.SetCenter(75, 75);
+
+	//ウイルス出力
+	m_img3.Draw();
+	//大きさ設定
+	m_img3.SetSize(150, 150);
+	//座標設定   //横   縦
+	m_img3.SetPos(1800, 800);
+	//回転
+	//m_img3.SetAng(m_ang);
+	//中心位置設定
+	m_img3.SetCenter(75, 75);
+
+	//ウイルス出力
+	m_img3.Draw();
+	//大きさ設定
+	m_img3.SetSize(150, 150);
+	//座標設定   //横   縦
+	m_img3.SetPos(1800, 150);
+	//回転
+	//m_img3.SetAng(m_ang);
+	//中心位置設定
+	m_img3.SetCenter(75, 75);
+
+	//ウイルス出力
+	m_img3.Draw();
+	//大きさ設定
+	m_img3.SetSize(150, 150);
+	//座標設定   //横   縦
+	m_img3.SetPos(150, 150);
+	//回転
+	//m_img3.SetAng(m_ang);
+	//中心位置設定
+	m_img3.SetCenter(75, 75);
 
 }
