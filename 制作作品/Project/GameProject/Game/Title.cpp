@@ -7,7 +7,7 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 {
 	
 	m_img = COPY_RESOURCE("仮タイトル画面", CImage); 
-	m_img2 = COPY_RESOURCE("sup", CImage);
+	m_img2 = COPY_RESOURCE("space", CImage);
 	//m_img3 = COPY_RESOURCE("V", CImage);
 	m_img3 = COPY_RESOURCE("Vキー", CImage);
 	//m_img4 = COPY_RESOURCE("X", CImage);
