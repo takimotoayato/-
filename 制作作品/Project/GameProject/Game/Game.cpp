@@ -28,6 +28,8 @@ Game::Game() :Base(eType_Scene)
 	Base::Add(new Enemy(CVector2D(1700, 200)));
 	Base::Add(new Enemy(CVector2D(32 * 17, 32 * 14)));
 	Base::Add(new Enemy(CVector2D(32 * 37, 32 * 10)));
+
+	
 	//ƒ}ƒbƒv‚Ì¶¬
 	Base::Add(new Map());
 	Base::Add(new UI());
