@@ -6,6 +6,12 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 {
 
 	m_img = COPY_RESOURCE("haikei1", CImage);
+	m_img2 = COPY_RESOURCE("上下左右矢印キー", CImage);
+	m_img3 = COPY_RESOURCE("haikei1", CImage);
+	m_img4 = COPY_RESOURCE("haikei1", CImage);
+	m_img5 = COPY_RESOURCE("haikei1", CImage);
+	m_img6 = COPY_RESOURCE("haikei1", CImage);
+	
 
 }
 
@@ -35,6 +41,11 @@ void Sousahou::Draw()
 	m_img.Draw();
 	m_img.SetSize(1920, 1080);
 
+	//矢印キー出力
+	m_img2.Draw();
+	m_img2.SetSize(200, 200);
+	m_img2.SetCenter(100, 100);
+	m_img2.SetPos(800, 300);
 	//文字表示
 	m_title_text.Draw(680, 120, 0, 0, 0, "     操作方法");
 	m_title_text.Draw(64, 320, 0, 0, 0, "↑↓→←キーで移動");

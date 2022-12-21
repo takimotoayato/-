@@ -94,6 +94,7 @@ void Init(void)
 	//ゲーム起動時に一度だけ呼ばれる
 	//-----------------------------------------------------
 	// 画像読み込み
+	//ADD_RESOURCE("", CImage::CreateImage("Image/.png"));
 		ADD_RESOURCE("Player", CImage::CreateImage("Image/Player.png"));
 		ADD_RESOURCE("Player2", CImage::CreateImage("Image/Player2.png"));
 		ADD_RESOURCE("戦闘機", CImage::CreateImage("Image/戦闘機.png"));
@@ -126,6 +127,12 @@ void Init(void)
 		ADD_RESOURCE("gameover", CImage::CreateImage("Image/gameover.png"));
 		ADD_RESOURCE("シールド", CImage::CreateImage("Image/シールド.png"));
 		ADD_RESOURCE("Effect_Bomb", CImage::CreateImage("Image/Effect_Bomb.png"));
+		ADD_RESOURCE("C", CImage::CreateImage("Image/C.png"));
+		ADD_RESOURCE("Z", CImage::CreateImage("Image/Z.png"));
+		ADD_RESOURCE("X", CImage::CreateImage("Image/X.png"));
+		ADD_RESOURCE("V", CImage::CreateImage("Image/V.png"));
+		ADD_RESOURCE("sup", CImage::CreateImage("Image/sup.png"));
+		ADD_RESOURCE("上下左右矢印キー", CImage::CreateImage("Image/上下左右矢印キー.png"));
 		//タイトル画面生成
 		Base::Add(new Title);
 	
