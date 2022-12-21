@@ -128,9 +128,13 @@ void Init(void)
 		ADD_RESOURCE("シールド", CImage::CreateImage("Image/シールド.png"));
 		ADD_RESOURCE("Effect_Bomb", CImage::CreateImage("Image/Effect_Bomb.png"));
 		ADD_RESOURCE("C", CImage::CreateImage("Image/C.png"));
+		ADD_RESOURCE("Cキー", CImage::CreateImage("Image/Cキー.png"));
 		ADD_RESOURCE("Z", CImage::CreateImage("Image/Z.png"));
+		ADD_RESOURCE("Zキー", CImage::CreateImage("Image/Zキー.png"));
 		ADD_RESOURCE("X", CImage::CreateImage("Image/X.png"));
+		ADD_RESOURCE("Xキー", CImage::CreateImage("Image/Xキー.png"));
 		ADD_RESOURCE("V", CImage::CreateImage("Image/V.png"));
+		ADD_RESOURCE("Vキー", CImage::CreateImage("Image/Vキー.png"));
 		ADD_RESOURCE("sup", CImage::CreateImage("Image/sup.png"));
 		ADD_RESOURCE("上下左右矢印キー", CImage::CreateImage("Image/上下左右矢印キー.png"));
 		//タイトル画面生成

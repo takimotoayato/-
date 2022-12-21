@@ -8,8 +8,10 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 	m_img = COPY_RESOURCE("haikei1", CImage);
 	m_img2 = COPY_RESOURCE("上下左右矢印キー", CImage);
 	m_img3 = COPY_RESOURCE("sup", CImage);
-	m_img4 = COPY_RESOURCE("Z", CImage);
-	m_img5 = COPY_RESOURCE("C", CImage);
+	//m_img4 = COPY_RESOURCE("Z", CImage);
+	m_img4 = COPY_RESOURCE("Zキー", CImage);
+	//m_img5 = COPY_RESOURCE("C", CImage);
+	m_img5 = COPY_RESOURCE("Cキー", CImage);
 	
 	
 

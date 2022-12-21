@@ -8,8 +8,11 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 	
 	m_img = COPY_RESOURCE("仮タイトル画面", CImage); 
 	m_img2 = COPY_RESOURCE("sup", CImage);
-	m_img3 = COPY_RESOURCE("V", CImage);
-	m_img4 = COPY_RESOURCE("X", CImage);
+	//m_img3 = COPY_RESOURCE("V", CImage);
+	m_img3 = COPY_RESOURCE("Vキー", CImage);
+	//m_img4 = COPY_RESOURCE("X", CImage);
+	m_img4 = COPY_RESOURCE("Xキー", CImage);
+
 }
 
 Title::~Title()
@@ -70,17 +73,17 @@ void Title::Draw()
 	m_img2.Draw();
 	m_img2.SetSize(400, 200);
 	m_img2.SetCenter(200, 100);
-	m_img2.SetPos(750, 800);
+	m_img2.SetPos(745, 795);
 	//Vキー出力
 	m_img3.Draw();
 	m_img3.SetSize(80, 80);
 	m_img3.SetCenter(40, 40);
-	m_img3.SetPos(580, 860);
+	m_img3.SetPos(580, 865);
 	//Xキー出力
 	m_img4.Draw();
 	m_img4.SetSize(80, 80);
 	m_img4.SetCenter(40, 40);
-	m_img4.SetPos(580, 920);
+	m_img4.SetPos(580, 930);
 	//文字表示
 	m_title_text.Draw(580, 820, 0, 0, 0, "            でゲームスタート");
 	m_title_text.Draw(580, 880, 0, 0, 0, " キーで無限耐久モード");
