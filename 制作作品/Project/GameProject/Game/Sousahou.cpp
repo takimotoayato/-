@@ -67,7 +67,7 @@ void Sousahou::Draw()
 	m_title_text.Draw(680, 120, 0, 0, 0, "     操作方法");
 	m_title_text.Draw(64, 320, 0, 0, 0, "↑↓→←キーで移動");
 	m_title_text.Draw(64, 520, 0, 0, 0, "スペースキーで弾の発射");
-	m_title_text.Draw(64, 720, 0, 0, 0, "Zボタンでトラップ設置");
-	m_title_text.Draw(64, 920, 0, 0, 0, "Cボタンでタイトル画面へ戻る");
+	m_title_text.Draw(64, 720, 0, 0, 0, "Zキーでトラップ設置");
+	m_title_text.Draw(64, 920, 0, 0, 0, "Cキーでタイトル画面へ戻る");
 
 }
