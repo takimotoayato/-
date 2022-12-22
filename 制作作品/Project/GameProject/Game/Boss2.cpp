@@ -27,7 +27,7 @@ void Boss2::Update()
 		m_ang = atan2(vec.x, vec.y);
 		if (m_cnt >= 180)
 		{
-			Base::Add(new Bullet(eType_Enemy_Bullet, m_pos, m_ang, 20));
+			Base::Add(new Bullet(eType_Enemy_Bullet, m_pos, m_ang, 30));
 			m_cnt = 0;
 		}
 	}
